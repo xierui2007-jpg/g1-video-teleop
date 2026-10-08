@@ -1,0 +1,31 @@
+# 上游仓库（setup/01_clone_upstream.sh 会拉进来）
+third_party/
+
+# Python 环境与缓存
+.venv/
+.venv_*/
+venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# 模型权重与大文件（setup/05_fetch_assets.sh 会下载）
+*.onnx
+*.onnx.data
+*.engine
+*.pt
+*.pth
+*.ckpt
+
+# 日志与运行产物
+logs/
+*.log
+outputs/trt/
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+
+# OMOMO 演示素材（学术许可，不随仓库分发；本地跑 demo 时保留）
+demo/videos/sub*.mp4
